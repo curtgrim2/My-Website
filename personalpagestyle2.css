@@ -1,14 +1,6 @@
 body{
-  text-align: center;
-  position: relative;
-
-/*background-image:url(3Dmist5.png);
-background-color:black;
-background-size: cover;
-transition: opacity .5s;
-animation: fadeIn 2s;
-animation: backgroundScroll 3s linear infinite;
-animation-fill-mode: forwards;*/
+  background-color: pink;
+  overflow:hidden;
 }
 
 *{
@@ -35,34 +27,26 @@ a{
 }
 
 .contain{
-  background-size: cover;
   position:fixed;
+  display: flex; /*eliminates gaps between imgs*/
   top:0;
   z-index:-1;
   background-color: black;
   /*background-image:url("3dmist5.png");*/
-  overflow:hidden;
-white-space: nowrap;
-margin: 0% 0%;
-padding: 0% 0%;
+width:max-content; /*Meaning container will extend pass body/page if need be*/
 height: 100%;
 
 }
 
-.fog{
-  display:inline-block;
-  font-size:25px;
-  margin: 0% 0%;
-  padding: 0% 0%;
-  height: 100%;
+.mistback{
+  display: inline-block;
+width:auto; /*contributes to "infinite" imgs*/
+height: 100%;
 animation: infinitescroll 15s linear infinite;
 }
 
 img{
   pointer-events:none;
-/*  width:100%;
-  height:100%;
-  margin: 0;*/
 }
 
 
