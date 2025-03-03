@@ -11,21 +11,14 @@ html{
 
 
 ::selection{
-
     color:white;
     background:rgba(0,0,0,.1);
-
-
-
-
 }
 
 body{
 
   background-image:url(coloredmist2close.png);
   background-size: cover;
-  /*position:relative;*/
-
 }
 
 
@@ -298,22 +291,35 @@ padding-top:1%;
 
 }
 
-.imagelink{
- position:absolute;
- top:70%;
-left:65%;
 
+.homelink{
+  text-decoration:none;
+  box-shadow: 0px 0px 20px 1px white;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width:125px;
+  min-height:125px;
+  max-width: 100%;
+      height: 12vw;
+      width: 12%;
+      background-color: black;
+      text-align: center;
+      border-radius:50%;
+      color:white;
+      font-size:2.8vh;
 
 }
 
-.theimg{
-  /*max-width: 100%;
-      height: 260px;
-      width: 260px;*/
- max-width: 100%;
-      height: auto;
-      width: auto;
+.imagelink{
+ position:relative;
+ top:60%;
+margin: 0 auto;
 
+}
+.homelink:hover{
+  box-shadow: 0px 0px 20px 10px white;
 }
 
 .userselect{
@@ -324,18 +330,27 @@ left:65%;
 border:1px #1FE3D8 solid;
 }
 
+#homepage{
+  background-color: red;
+  display:block;
+}
+
+#linkback2{
+
+}
+
 @media only screen and (max-width:600px){
-  .imagelink{
+/*  .imagelink{
     left:0%;
     margin-right:auto;
     margin-left:30%;
   }
-  .theimg{
+  .homelink{
 
    max-width: 100%;
         height: 80%;
         width: 80%;
-  }
+  }*/
 }
 @media only screen and (max-width:950px){
 
@@ -366,7 +381,6 @@ border:1px #1FE3D8 solid;
   #slidecount{
     font-size:4vw;
   }
-
 
 }
 
@@ -429,11 +443,13 @@ border:1px #1FE3D8 solid;
 
 
 <div class="p3">
-  <a class = "imagelink" href = "index.html">
 
-        <img class = "theimg" src = "blackhole4.png"/>
+<div class = "imagelink">
+  <a class = "homelink"  href = "index.html">
 
-      </a>
+  HOMEPAGE <!--DONT LOSE TOUCH  -->
+  </a>
+  </div>
 </div>
 
   </div>
